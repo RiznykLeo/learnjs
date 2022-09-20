@@ -90,3 +90,28 @@
 //     "Mary": 250
 // };
 //---------------------------------
+
+//DATES
+
+//get week day
+
+// function getWeekDay(date){
+//     const days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
+//     return days[date.getDay()]
+//
+// }let date = new Date(2012, 0, 3);
+// alert( getWeekDay(date) );
+
+//get week day Europe
+
+// function getWeekDay(date) {
+//     let day = date.getDay();
+//     if (day === 0) {
+//         day = 7;
+//     }
+//     return day;
+// }
+// let date = new Date(2012, 0, 3);
+// alert( getWeekDay(date) );
+
+//get second for today
