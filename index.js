@@ -1,3 +1,4 @@
+'use strict'
 //MAP AND SET
 
 //filter unique values from array
@@ -94,7 +95,6 @@
 //DATES
 
 //get week day
-
 // function getWeekDay(date){
 //     const days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
 //     return days[date.getDay()]
@@ -103,7 +103,6 @@
 // alert( getWeekDay(date) );
 
 //get week day Europe
-
 // function getWeekDay(date) {
 //     let day = date.getDay();
 //     if (day === 0) {
@@ -113,5 +112,44 @@
 // }
 // let date = new Date(2012, 0, 3);
 // alert( getWeekDay(date) );
+//---------------------------------
 
-//get second for today
+//RECURSION
+
+//sum all numbers to given number
+// function sumToRec(n){
+//     if(n === 0){
+//         return n
+//     }
+//     return n + sumToRec(n - 1)
+// }
+
+//factorial
+// function factorial(n){
+//     return (n !== 1) ? n * factorial(n - 1) : 1;
+// }
+
+//LINKED LIST
+
+//return elements
+// function printList(list) {
+//     alert(list.value);
+//     if (list.next) {
+//         printList(list.next);
+//     }
+// }
+// let list = {
+//     value: 1,
+//     next: {
+//         value: 2,
+//         next: {
+//             value: 3,
+//             next: {
+//                 value: 4,
+//                 next: null
+//             }
+//         }
+//     }
+// };
+//
+
