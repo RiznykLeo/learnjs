@@ -254,3 +254,37 @@
 //     return f;
 // }
 // alert(sum(4)(6)(-5))
+
+//---------------------------------
+
+//SETTIMEOUT SETINTERVAL
+
+//timer counter with nested timeout
+// function printNumbers(from, to) {
+//     let number = from;
+//     let timer = setTimeout(printNumbers, 1000)
+//
+//     function printNumbers() {
+//         console.log(number);
+//         number++;
+//         timer = setTimeout(printNumbers, 1000)
+//         if (number === to) {
+//             clearTimeout(timer)
+//         }
+//     }
+// }
+
+//timer counter with interval
+// function printNumbers(from, to) {
+//     let number = from;
+//     let timer = setInterval(() => {
+//         console.log(number);
+//         number++;
+//         if (number === to) {
+//             clearInterval(timer)
+//         }
+//     }, 1000)
+// }
+// printNumbers(0, 5)
+
+//---------------------------------
