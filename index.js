@@ -19,6 +19,7 @@
 //     return Array.from(map.values());
 // }
 // let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
 //---------------------------------
 
 
@@ -34,6 +35,7 @@
 // let readMessages = new WeakSet();
 // // alert("Read message 0: " + readMessages.has(messages[0])); // true
 // messages.shift();
+
 //---------------------------------
 
 
@@ -62,6 +64,7 @@
 //     age: 30
 // };
 // alert( propCount(user) ); // 2
+
 //---------------------------------
 
 //DECONSTRUCTION
@@ -90,6 +93,7 @@
 //     "Pete": 300,
 //     "Mary": 250
 // };
+
 //---------------------------------
 
 //DATES
@@ -112,6 +116,7 @@
 // }
 // let date = new Date(2012, 0, 3);
 // alert( getWeekDay(date) );
+
 //---------------------------------
 
 //RECURSION
@@ -129,6 +134,7 @@
 //     return (n !== 1) ? n * factorial(n - 1) : 1;
 // }
 
+//---------------------------------
 //LINKED LIST
 
 //return elements
@@ -153,3 +159,63 @@
 // };
 //
 
+//---------------------------------
+
+//CLOSURES
+
+//sum function
+// function sum(a){
+//    return  function (b){
+//         return a + b;
+//     }
+// }
+// console.log( sum(5)(-1))
+
+//array filter functions
+// function inBetween(a,b){
+//     return function(x){
+//         return x >= a && x <= b;
+//     }
+// }
+// function inArray(arr){
+//     return function(x){
+//         return arr.includes(x)
+//     }
+// }
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+// alert( arr.filter(inBetween(3, 6))); // 3,4,5,6
+// alert( arr.filter(inArray([1, 2, 10]))); // 1,2
+
+//sort object by field
+// function byField(fieldName){
+//     return (a,b) => {return a[fieldName] > b[fieldName]  ? 1: -1}
+// }
+// let users = [
+//     { name: "John", age: 20, surname: "Johnson" },
+//     { name: "Pete", age: 18, surname: "Peterson" },
+//     { name: "Ann", age: 19, surname: "Hathaway" }
+// ];
+//
+// users.sort(byField('name'));
+// users.forEach(user => console.log(user.name)); // Ann, John, Pete
+//
+// users.sort(byField('age'));
+// users.forEach(user => console.log(user.name)); // Pete, Ann, John
+
+//army of functions, return id of function
+// function makeArmy() {
+//     let shooters = [];
+//     for (let i = 0; i < 10; i++) {
+//         function shooter() {
+//             alert( i );
+//         }
+//         shooters.push(shooter);
+//     }
+//     return shooters;
+// }
+//
+// let army = makeArmy();
+// army[0]() //return 0
+// army[5]() //return 5
+
+//---------------------------------
