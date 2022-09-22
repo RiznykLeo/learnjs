@@ -219,3 +219,38 @@
 // army[5]() //return 5
 
 //---------------------------------
+
+//NAMED FUNCTION EXPRESSIONS, NFE
+
+//create function call counter
+// function makeCounter() {
+//     let count = 0;
+//     function counter() {
+//         return count++;
+//     }
+//     counter.set = value => count = value;
+//     counter.decrease = () => count--;
+//     return counter;
+// }
+//
+// let counter = makeCounter()
+// console.log(counter());
+// console.log(counter.set(3));
+// console.log(counter.decrease());
+
+
+//create sum function that will sum all calls
+// function sum(a) {
+//     let currentSum = a;
+//
+//     function f(b) {
+//         currentSum += b;
+//         return f;
+//     }
+//
+//     f.toString = function () {
+//         return currentSum;
+//     };
+//     return f;
+// }
+// alert(sum(4)(6)(-5))
