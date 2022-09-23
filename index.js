@@ -259,7 +259,7 @@
 
 //SETTIMEOUT SETINTERVAL
 
-//timer counter with nested timeout
+//call counter with nested timeout
 // function printNumbers(from, to) {
 //     let number = from;
 //     let timer = setTimeout(printNumbers, 1000)
