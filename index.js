@@ -288,3 +288,37 @@
 // printNumbers(0, 5)
 
 //---------------------------------
+
+
+//DECORATORS,BIND,CALL,APPLY
+
+//spy function which returns calls of another
+// function work(a, b) {
+//     alert(a + b);
+// }
+//
+// function spy(func) {
+//     function wrapper(...args) {
+//         wrapper.calls.push(args);
+//         return func.apply(this, args)
+//     }
+//     wrapper.calls = [];
+//     return wrapper
+// }
+// work = spy(work);
+// work(1, 2); // 3
+// work(4, 5); // 9
+// for (let args of work.calls) {
+//     alert('call:' + args.join());
+// }
+
+//delaying function
+// function delay(func, ms) {
+//     return function () {
+//         setTimeout(() => func.apply(this, arguments), ms)
+//     }
+// }
+//
+// let f1000 = delay(alert, 1000);
+//
+// f1000("test");
