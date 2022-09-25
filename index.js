@@ -322,3 +322,29 @@
 // let f1000 = delay(alert, 1000);
 //
 // f1000("test");
+
+//---------------------------------
+
+//PROTOTYPAL INHERITANCE, PROTOTYPE
+
+//add defer method to all functions
+// Function.prototype.defer = function (ms) {
+//     setTimeout(this, ms)
+// }
+// function f() {
+//     alert("Hello!");
+// }
+// f.defer(1000);
+
+//add defer decorator for functions
+// Function.prototype.defer = function (ms) {
+//     let f = this
+//     return function (...args) {
+//         setTimeout(() => f.apply(f, args), ms)
+//     }
+// }
+//
+// function f(a, b) {
+//     alert(a + b);
+// }
+// f.defer(1000)(1, 2);
