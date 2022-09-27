@@ -392,5 +392,21 @@
 //
 //
 
+//ERROR HANDLING, TRY CATCH
 
-
+//create your own error class
+// class FormatError extends Error {
+//     constructor(message) {
+//         super(message);
+//         this.name = "FormatError"
+//     }
+// }
+//
+// let err = new FormatError("Format error");
+//
+// alert(err.message);
+// alert(err.name);
+// alert(err.stack);
+//
+// alert(err instanceof FormatError);
+// alert(err instanceof SyntaxError);
