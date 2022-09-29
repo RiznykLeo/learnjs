@@ -454,4 +454,14 @@
 //
 // demoGithubUser();
 
+//JSON
+
+//convert to json and to object
+// let user = {
+//     name: "Albert Einstein",
+//     age: 35
+// };
+// const json = JSON.stringify(user);
+// const newUser = JSON.parse(json);
+
 
