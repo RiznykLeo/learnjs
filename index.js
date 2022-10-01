@@ -1,4 +1,5 @@
 'use strict'
+
 //MAP AND SET
 
 //filter unique values from array
@@ -21,7 +22,6 @@
 // let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 
 //---------------------------------
-
 
 //WEAKMAP AND WEAKSET
 
@@ -389,8 +389,24 @@
 //
 // let clock = new Clock({template: 'h:m:s'});
 // clock.start();
+
+//extended clock, with precision
 //
+// class ExtClock extends Clock {
+//     constructor(options) {
+//         super(options);
+//         let {precision = 1000} = options;
+//         this.precision = precision;
+//     }
 //
+//     start() {
+//         this.render();
+//         this.timer = setInterval(() => this.render(), this.precision);
+//     }
+// }
+//
+// let extc = new ExtClock({template: 'h:m:s', precision: 5000})
+// extc.start()
 
 //ERROR HANDLING, TRY CATCH
 
@@ -439,11 +455,11 @@
 //
 //         try {
 //             user = await loadJson(`https://api.github.com/users/${name}`);
-//             alert(`Полное имя: ${user.name}.`);
+//             alert(`full name: ${user.name}.`);
 //             break;
 //         } catch (err) {
 //             if (err instanceof HttpError && err.response.status === 404) {
-//                 alert("Такого пользователя не существует, пожалуйста, повторите ввод.");
+//                 alert("This user doesn't exists");
 //             } else {
 //                 throw err;
 //             }
@@ -463,5 +479,3 @@
 // };
 // const json = JSON.stringify(user);
 // const newUser = JSON.parse(json);
-
-
