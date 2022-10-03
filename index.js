@@ -408,6 +408,7 @@
 // let extc = new ExtClock({template: 'h:m:s', precision: 5000})
 // extc.start()
 
+
 //ERROR HANDLING, TRY CATCH
 
 //create your own error class
