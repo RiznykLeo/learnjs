@@ -480,3 +480,21 @@
 // };
 // const json = JSON.stringify(user);
 // const newUser = JSON.parse(json);
+
+//GENERATORS
+
+//create seed based random generation
+// function* rand(seed) {
+//     let value = seed;
+//
+//     while (true) {
+//         value = value * 16807 % 2147483647
+//         yield value;
+//     }
+// }
+// let gen = rand(1)
+// console.log(gen.next().value)
+// console.log(gen.next().value)
+// console.log(gen.next().value)
+// console.log(gen.next().value)
+//
