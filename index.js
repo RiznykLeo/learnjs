@@ -498,3 +498,17 @@
 // console.log(gen.next().value)
 // console.log(gen.next().value)
 //
+
+//Events
+
+//hide btn on click
+// function hideMe() {
+//     const button = document.getElementById("hide")
+//     button.addEventListener("click", () => {
+//         button.hidden = true
+//         setTimeout(() => button.hidden = false, 1500)
+//     })
+// }
+// hideMe();
+
+
